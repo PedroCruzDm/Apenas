@@ -1,0 +1,40 @@
+:root{
+    --cor-primaria: #3f51b5;
+}
+body{
+    font-family: 'Roboto', sans-serif;
+    background: rgb(15,11,65);
+   /* background: linear-gradient(0deg, rgba(15,11,65,1) 0%, rgba(55,63,172,1) 100%);*/
+}
+
+.vitrine{
+    background-color: #f5f5f5;
+    padding: 20px;
+    margin-top: 20px;
+    border-radius: 5px;
+    border: 4px solid var(--cor-primaria);
+}
+.vitrine .divisoria{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: 1fr;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+}
+.caixa{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    
+}
+
+.item .ver_detalhes_btn{
+    background-color: var(--cor-primaria);
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
