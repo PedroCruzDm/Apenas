@@ -1,6 +1,8 @@
 :root{
     --cor-primaria: #c51717;
+    --vermelho-tonalidade-1: #5e0b0b;
 }
+@import url("header.css");
 /*
 html, body {
     width: 100%;
