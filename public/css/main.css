@@ -1,8 +1,20 @@
 :root{
     --cor-primaria: #c51717;
     --vermelho-tonalidade-1: #5e0b0b;
+
+    --cor-borda-index: #c51717;
+    --cor-borda-css: #1737c5;
+    --cor-borda-js: #ffd000;
+
+    --color1:  #fffaff;
+    --color2:  #d1cdd1;
+    --color3:  #a39fa3;
+    --color4:  #757175;
+    --color5:  #474347;
 }
+
 @import url("header.css");
+@import url("pagina_escolha.css");
 /*
 html, body {
     width: 100%;
@@ -27,6 +39,7 @@ body::after {
 }
 
 */
+
 html{
     line-height:1.15;
     -webkit-text-size-adjust:100%
@@ -39,7 +52,7 @@ body{
     font-style: normal;
     /*font-family: 'Roboto', sans-serif;*/
     background: #440000;
-    background: linear-gradient(184deg, rgba(68,0,0,1) 0%, rgba(168,1,61,1) 100%);
+    background: linear-gradient(184deg, #440000 0%, #a8013d 100%);
     background-repeat: no-repeat;
 }
 
@@ -48,8 +61,26 @@ body{
     padding: 20px;
     margin-top: 20px;
     border-radius: 24px;
+    min-width: 30%;
     border: 8px solid var(--cor-primaria);
 }
+.vitrine#css{
+    background-color: #f5f5f5;
+    padding: 20px;
+    margin-top: 20px;
+    border-radius: 24px;
+    min-width: 30%;
+    border: 8px solid var(--cor-borda-css);
+}
+.vitrine#js{
+    background-color: #f5f5f5;
+    padding: 20px;
+    margin-top: 20px;
+    border-radius: 24px;
+    min-width: 30%;
+    border: 8px solid var(--cor-borda-js);
+}
+
 .vitrine .divisoria{
     display: grid;
     grid-template-columns: repeat(5, 1fr);
@@ -61,8 +92,11 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
-    
+}
+.item img{
+    height: 80px;
+    width: 80px;
+    border-radius: 50%;
 }
 
 .item .ver_detalhes_btn{
@@ -74,3 +108,46 @@ body{
     cursor: pointer;
     transition: 0.3s;
 }
+
+
+
+
+
+header {
+    background: #440000;
+    background: linear-gradient(184deg, #440000 100%, #a8013d 0%);
+    height: 100px;/* Altura */
+    width: 100%; /* Largura */
+    display: flex; /* Tipo de exibição */
+    align-items: center; /* Alinhamento vertical */
+    justify-content: space-between; /* Alinhamento horizontal */
+  }
+  
+  /* Estilo do logotipo */
+  header img {
+    height: 80px; /* Altura */
+    margin-left: 20px; /* Margem esquerda */
+  }
+  
+  /* Estilo do menu de navegação */
+  nav {
+    margin-right: 20px; /* Margem direita */
+  }
+  
+  /* Estilo da lista de links */
+  nav ul {
+    list-style-type: none; /* Tipo de estilo da lista */
+    display: flex; /* Tipo de exibição */
+  }
+  
+  /* Estilo dos itens da lista */
+  nav ul li {
+    margin: 0 10px; /* Margem */
+  }
+  
+  /* Estilo dos links */
+  nav ul li a {
+    color: white; /* Cor do texto */
+    text-decoration: none; /* Decoração do texto */
+    font-weight: bold; /* Peso da fonte */
+  }

@@ -3,6 +3,7 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
+      <!--  <script src="{{ url('js/main.js') }}" type="module"></script> -->
         <link rel="stylesheet" href="{{ url('css/main.css') }}">
         <title>Apenas Lojinha</title>
 
@@ -11,7 +12,9 @@
 
     </head>
     <body>
-        
+        <header>
+            @include('./include/header')
+        </header>
             <main>
                 <div class="caixa">
 
@@ -25,18 +28,19 @@
                         <div class="divisoria">
                             
                             <div class="item">
-                            <img src="{{ url('') }}" alt="Imagem do Serviço">
-                            <h2>Serviço 01</h2>
+                            <img src="{{ url('image/css3.png') }}" alt="Imagem do Serviço">
+                            <h2>Design clear style</h2>
                             <p>Descrição</p>
-                            <p>R$</p>
+                            <p>R$ 25,00</p>
                             
-                            <button class="ver_detalhes_btn" type="button">
-                            Ver detalhes</button>
+                            <a href="{{ Url('escolha_css') }}">
+                                <button class="ver_detalhes_btn" type="button" > Ver detalhes</button>
+                            </a>
                         </div>
                         
                         <div class="item">
-                            <img src="{{ url('') }}" alt="Imagem do Serviço">
-                            <h2>Serviço 02</h2>
+                            <img src="{{ url('image/js.png') }}" alt="Imagem do Serviço">
+                            <h2>Script em JS</h2>
                             <p>Descrição</p>
                             <p>R$</p>
 
