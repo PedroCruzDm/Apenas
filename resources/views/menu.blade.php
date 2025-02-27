@@ -15,6 +15,7 @@
         <header>
             @include('./include/header')
         </header>
+        
             <main>
                 <div class="caixa">
 
@@ -31,7 +32,6 @@
                             <img src="{{ url('image/css3.png') }}" alt="Imagem do Serviço">
                             <h2>Design clear style</h2>
                             <p>Descrição</p>
-                            <p>R$ 25,00</p>
                             
                             <a href="{{ Url('escolha_css') }}">
                                 <button class="ver_detalhes_btn" type="button" > Ver detalhes</button>
@@ -42,20 +42,10 @@
                             <img src="{{ url('image/js.png') }}" alt="Imagem do Serviço">
                             <h2>Script em JS</h2>
                             <p>Descrição</p>
-                            <p>R$</p>
 
                             <button class="ver_detalhes_btn" type="button">Ver detalhes</button>
                         </div>
                         
-                        <div class="item">
-                            <img src="{{ url('') }}" alt="Imagem do Serviço">
-                            <h2>Serviço 03</h2>
-                            <p>Descrição</p>
-                            <p>R$</p>
-
-                            <button class="ver_detalhes_btn" type="button">Ver detalhes</button>
-                        </div>
-
                     </div>
                 </div>
             </div>

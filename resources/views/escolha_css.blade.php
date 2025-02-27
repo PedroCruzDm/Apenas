@@ -18,9 +18,25 @@
 
         <main>
             <div style="display: flex; justify-content: center; align-items: center; height: 100vh;">
-                
                 <div class="vitrine" id="css">
-                    
+                    <center>
+                        <h1>Escolha o tipo do serviço CSS</h1>
+                    </center>
+                    <p style="font-weight: bolder;">Escolher serviço:</p>
+                    <select name="css_options" id="css_options">
+                        <option value="0">Nenhum</option>
+                        <option value="1">layout da pagina</option>
+                        <option value="2">design da pagina</option>
+                        <option value="3">design do header</option>
+                        <option value="4">design do footer</option>
+                        <option value="5">design do projeto</option>
+                    </select>
+                    <hr>
+                    <div class="valor">
+                        <h2>Valor do serviço</h2>
+                        <p>R$ <b id="valor_service_css">00,00</b></p>
+                    </div>
+                    <button type="button" class="btn_comprar" id="BTN_comprar_css">Comprar</button>
                 </div>
 
             </div>

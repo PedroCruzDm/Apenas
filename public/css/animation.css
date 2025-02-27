@@ -1,0 +1,13 @@
+@import url('main.css');
+
+@keyframes borda_rota{
+    to {
+        --angulo: 360deg;
+      }
+}
+
+@property --angulo {
+    syntax: '<angulo>';
+    initial-value: 0deg;
+    inherits: false;
+}

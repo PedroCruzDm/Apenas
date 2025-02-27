@@ -1,0 +1,37 @@
+header {
+    background: #8c00ff;
+    box-shadow: inset 40px 40px 80px #6500b8,
+      inset -40px -40px 80px #b300ff;
+    height: 100px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  header img {
+    height: 80px;
+    margin-left: 20px;
+  }
+  
+  nav {
+    margin-right: 20px;
+  }
+  
+  /* Estilo da lista de links */
+  nav ul {
+    list-style-type: none; /* Tipo de estilo da lista */
+    display: flex; /* Tipo de exibição */
+  }
+  
+  /* Estilo dos itens da lista */
+  nav ul li {
+    margin: 0 10px; /* Margem */
+  }
+  
+  /* Estilo dos links */
+  nav ul li a {
+    color: white; /* Cor do texto */
+    text-decoration: none; /* Decoração do texto */
+    font-weight: bold; /* Peso da fonte */
+  }
